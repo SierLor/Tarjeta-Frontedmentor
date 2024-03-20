@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+--Pale-blue: hsl(225, 100%, 94%);
+--Bright-blue: hsl(245, 75%, 52%);
+--Very-pale-blue: hsl(225, 100%, 98%);
+--Desaturated-blue: hsl(224, 23%, 55%);
+--Dark-blue: hsl(223, 47%, 23%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+   font-family: 'Red Hat Display', sans-serif; 
+   background: var(--Pale-blue);
+   
+}
+
+.main-container {
+    background-color: white;
+    width: 330px;
+    height: 600px;
+    margin: 70px auto;
+    border-radius: 16px;
+}
+
+.image img{
+    width: 100%;
+    border-radius: 16px 16px 0 0;
+}
+
+h1{
+    font-size: 1.6em;
+    color: var(--Dark-blue);
+    font-weight: 800;
+    text-align: center;
+    margin-top: 25px;
+}
+
+p{
+    font-size: 1.19em;
+    text-align: center;
+    color: var(--Desaturated-blue);
+    font-weight: 100;
+    margin-top: 15px;
+
+}
+
+.precio {
+    display: flex;
+    width: 290px;
+    margin-left: 20px;
+    height: 85px;
+    margin-top: 30px;
+    justify-content: space-around;
+    border-radius: 10px;
+    background-color: var(--Very-pale-blue);
+}
+
+.icon{
+    margin-top: 20px;
+    
+}
+
+.precio__detallado {
+    margin-top: 25px;
+    margin-left: -25px;
+    padding-top: 0;
+   
+}
+
+.precio__detallado h2 {
+    font-size: 1em;
+    font-weight: 800
+    padding-top: 0px;
+    color: var(--Dark-blue);
+}
+
+.precio__detallado p {
+    font-size: 1em;
+    margin-top: -2px;
+  
+    
+}
+
+.link {
+    display: block;
+    margin-top: 35px;
+    }
+
+
+a{
+    font-size: 16px;
+    font-weight: 700;
+   color: var(--Bright-blue); 
+}
+
+a:hover{
+    text-decoration: none;
+    color: var(--Desaturated-blue);
+}
+
+button{
+    display: block;
+     width: 290px;
+     margin-left: 20px;
+     height: 53px;
+     margin-top: 30px;
+     border-radius: 10px;
+     border: none;
+     font-size: 1.1em;
+     align-items: center;
+     font-weight: 600;
+     background-color: var(--Bright-blue) ;
+     color: var(--Very-pale-blue);
+     box-shadow: 1px 10px 8px 3px var(--Pale-blue);
+     cursor: pointer;
+     }
+
+     button:hover {
+        background-color: var(--Desaturated-blue);
+     }
+
+     .link__two a{
+        display: block;
+        text-decoration: none;
+        text-align: center;
+        margin-top: 30px;
+        font-size: 1.1em;
+        font-weight: 900;
+        color: var(--Desaturated-blue);
+     }
+
+
+     .link__two a:hover{
+        color: var(--Dark-blue);
+     }
+
+
+     @media (min-width:944px) {
+        body{
+            background-image: url(./images/pattern-background-desktop.svg);
+            background-repeat: no-repeat;
+            background-size:contain;
+            
+        }
+
+        .main-container {
+            width: 390px;
+            height: 640px;
+            margin-bottom: 30px;
+           
+        }
+
+        .precio{
+            margin-left: 50px;
+        }
+
+        .button{
+            margin-left: 30px;
+        }
+     }
+
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
